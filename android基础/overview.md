@@ -8,3 +8,5 @@
 
 5.[BroadcastReceiver](https://github.com/knowledgeIsMoney/android-interveiw/blob/master/android%E5%9F%BA%E7%A1%80/BroadcastReceiver.md)
 
+6.[简述handler机制](https://github.com/knowledgeIsMoney/android-interveiw/blob/master/android%E5%9F%BA%E7%A1%80/handler%E6%9C%BA%E5%88%B6.md)
+
