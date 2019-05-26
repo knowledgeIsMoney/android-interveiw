@@ -6,8 +6,9 @@ startservice：onÇreate，onStartCommand，onStart，onDestory
 bindservice：onCreate，onBind，onUnbind，onDestory
 
 注意点：   
-       * 1.onCreate若service已启动则不再调用
-       * 2.同一个Activity多次bindservice只会走一次unbind，不同activity bindservice才会多次onbind
-       * 3.所有bind全部unbind，如果startservice要有stopservice，否则service不会走ondestory停止服务。
+       
+       1.onCreate若service已启动则不再调用
+       2.同一个Activity多次bindservice只会走一次unbind，不同activity bindservice才会多次onbind
+       3.所有bind全部unbind，如果startservice要有stopservice，否则service不会走ondestory停止服务。
        
 ### 
