@@ -13,4 +13,5 @@ bindservice：onCreate，onBind，onUnbind，onDestory
        4.多次绑定可能会出问题，要特别小心
        
 多次绑定问题参考文章：https://blog.csdn.net/u013553529/article/details/54754491
-### 
+## service中该如何做耗时操作？
+#### 使用IntentService，在IntentService的onCreate中初始化了一个HandlerThread，在onHandleIntent方法中就是异步线程了
