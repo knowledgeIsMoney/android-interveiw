@@ -1,7 +1,7 @@
 ## 生命周期
 参考文章：https://blog.csdn.net/carson_ho/article/details/53160137
 
-startservice：onÇreate，onStartCommand，onStart，onDestory
+startservice：onCreate，onStartCommand，onStart，onDestory
 
 bindservice：onCreate，onBind，onUnbind，onDestory
 
