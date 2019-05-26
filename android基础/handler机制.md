@@ -8,5 +8,5 @@
 ## Handler，MessageQueue，Looper三者的持有关系？
 #### Looper通过ThreadLocal实现每个Thread都有一个副本（必须调用prepare该线程才有副本），在类初始化的时候初始化一个MessageQueue，handler通过当所在Thread获取Looper对象，并同时持有Looper的MessageQueue对象，子线程初始化handler如果没有先执行Looper.prepare()会崩溃报错！
 ## ThreadLocal在Looper中如何运用的？
-#### [ThreadLocal]()
+#### [ThreadLocal](https://github.com/knowledgeIsMoney/android-interveiw/blob/master/java%E5%9F%BA%E7%A1%80/ThreadLocal.md)
 
