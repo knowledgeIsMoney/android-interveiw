@@ -8,7 +8,9 @@ bindservice：onCreate，onBind，onUnbind，onDestory
 注意点：   
        
        1.onCreate若service已启动则不再调用
-       2.同一个Activity多次bindservice只会走一次unbind，不同activity bindservice才会多次onbind
-       3.所有bind全部unbind，如果startservice要有stopservice，否则service不会走ondestory停止服务。
+       2.多次bindservice只会走一次onbind
+       3.所有bind全部unbind,bind、unbind的关键是以ServiceConnection对象为核心的，如果startservice要有stopservice，否则service不会走ondestory停止服务。
+       4.多次绑定可能会出问题，要特别小心
        
+多次绑定问题参考文章：https://blog.csdn.net/u013553529/article/details/54754491
 ### 
