@@ -1,5 +1,7 @@
 package com.banana.servicedemo;
 
+import android.app.ActivityManager;
+import android.app.IntentService;
 import android.app.Service;
 import android.content.ComponentName;
 import android.content.Intent;
@@ -20,7 +22,9 @@ import androidx.appcompat.widget.Toolbar;
 
 
 public class MainActivity extends AppCompatActivity {
-    ServiceConnection mServiceConnection;
+    final String TAG = this.getClass().getName();
+    ServiceConnection mServiceConnection = null;
+    ServiceConnection mServiceConnection1 = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         Button start_service = findViewById(R.id.start_service);
         Button bind_service = findViewById(R.id.bind_service);
         Button unbind_service = findViewById(R.id.unbind_service);
+        Button stop_service = findViewById(R.id.stop_service);
+        Button start_b = findViewById(R.id.start_b);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,38 +50,69 @@ public class MainActivity extends AppCompatActivity {
         start_service.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.e("MainActivity", "startService click");
+                Log.e(TAG, "startService click");
                 startService(new Intent(MainActivity.this, DemoService.class));
             }
         });
         bind_service.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.e("MainActivity", "bind_service click");
-                mServiceConnection = new ServiceConnection() {
-                    @Override
-                    public void onServiceConnected(ComponentName name, IBinder service) {
-                        Log.e("MainActivity", "onServiceConnected");
-                    }
+                Log.e(TAG, "bind_service click");
+                if(mServiceConnection==null) {
+                    mServiceConnection = new ServiceConnection() {
+                        @Override
+                        public void onServiceConnected(ComponentName name, IBinder service) {
+                            Log.e(TAG, "onServiceConnected");
+                        }
 
-                    @Override
-                    public void onServiceDisconnected(ComponentName name) {
-                        Log.e("MainActivity", "onServiceDisconnected");
-                    }
-                };
-                bindService(new Intent(MainActivity.this, DemoService.class), mServiceConnection, Service.BIND_AUTO_CREATE);
+                        @Override
+                        public void onServiceDisconnected(ComponentName name) {
+                            Log.e(TAG, "onServiceDisconnected");
+                        }
+                    };
+                    bindService(new Intent(MainActivity.this, DemoService.class), mServiceConnection, Service.BIND_AUTO_CREATE);
+                } else {
+                    mServiceConnection1 = new ServiceConnection() {
+                        @Override
+                        public void onServiceConnected(ComponentName name, IBinder service) {
+                            Log.e(TAG, "onServiceConnected 1");
+                        }
+
+                        @Override
+                        public void onServiceDisconnected(ComponentName name) {
+                            Log.e(TAG, "onServiceDisconnected 1");
+                        }
+                    };
+//                    bindService(new Intent(MainActivity.this, DemoService.class), mServiceConnection, Service.BIND_AUTO_CREATE);
+                    bindService(new Intent(MainActivity.this, DemoService.class), mServiceConnection1, Service.BIND_AUTO_CREATE);
+                }
             }
         });
         unbind_service.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.e("MainActivity", "unbind_service click");
+                Log.e(TAG, "unbind_service click");
                 try {
-//                    unbindService(mServiceConnection);
-                    stopService(new Intent(MainActivity.this, DemoService.class));
+                    unbindService(mServiceConnection);
+                    unbindService(mServiceConnection1);
                 } catch (IllegalArgumentException e) {
                     e.printStackTrace();
+                    finish();
                 }
+            }
+        });
+        stop_service.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.e(TAG, "stop_service click");
+                stopService(new Intent(MainActivity.this, DemoService.class));
+            }
+        });
+        start_b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.e(TAG, "start_b click");
+               startActivity(new Intent(MainActivity.this, BActivity.class));
             }
         });
     }
