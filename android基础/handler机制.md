@@ -12,4 +12,5 @@
 ## 问题4：ThreadLocal在Looper中如何运用的？
 #### [ThreadLocal](https://github.com/knowledgeIsMoney/android-interveiw/blob/master/java%E5%9F%BA%E7%A1%80/ThreadLocal.md)
 ## 问题5：message执行的优先级？
+#### 优先级靠事件时间管理when属性
 
