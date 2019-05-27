@@ -12,3 +12,5 @@
 
 7.[SharedPreferences](https://github.com/knowledgeIsMoney/android-interveiw/blob/master/android%E5%9F%BA%E7%A1%80/SharedPreferences.md)
 
+8.[touch事件分发](https://github.com/knowledgeIsMoney/android-interveiw/blob/master/android%E5%9F%BA%E7%A1%80/touch%E4%BA%8B%E4%BB%B6%E5%88%86%E5%8F%91.md)
+
