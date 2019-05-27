@@ -11,4 +11,5 @@
     MVVM不会产生大量View接口，代码简洁，但是出问题不容易定位是View层问题还是Model层问题，适合偏向展示型的app，绝大多数业务逻辑都在后端，app主要功能就是展示数据，交互等
     
 ## databinding实现原理？
-#### 参考答案：
+#### 参考文章：https://cloud.tencent.com/developer/article/1036190
+#### 参考答案：通过自动生成binding文件实现
