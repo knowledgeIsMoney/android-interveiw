@@ -3,3 +3,5 @@
 2.接口和父类有同名函数，子类继承父类且实现接口是否可行？可行，会调用统一函数。
 
 3.[ThreadLocal](https://github.com/knowledgeIsMoney/android-interveiw/blob/master/java%E5%9F%BA%E7%A1%80/ThreadLocal.md)
+
+4.[对象的四种引用方式]()
