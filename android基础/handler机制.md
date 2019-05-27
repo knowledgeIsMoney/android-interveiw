@@ -17,4 +17,4 @@
 #### 参考文章：https://www.jianshu.com/p/49a70aeb555b
 #### 参考答案：Message会持有一个对Handler的引用，当这个Handler是非静态内部类的时候，又会持有一个对外部类比如activity的引用，如果发送一条延时的Message，这个message会长时间持有这个activity的引用导致activity内存不释放
 ## 问题7：handler导致内存泄漏解决办法？
-#### 参考答案：静态内部类加弱引用持有activity对象
+#### 参考答案：静态内部类加弱引用持有activity对象，另一种优雅的写法：将WeakReference封装在BaseHandler类中（http://www.ishenping.com/ArtInfo/177913.html）
