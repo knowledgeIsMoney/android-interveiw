@@ -1,4 +1,6 @@
 # android高频面试题总结
+    水平有限难免有错误或不足之处，希望各路大佬都可以多多指正，提供意见哈
+
 1.[android基础](https://github.com/knowledgeIsMoney/android-interveiw/blob/master/android%E5%9F%BA%E7%A1%80/overview.md)
 
 2.[java基础](https://github.com/knowledgeIsMoney/android-interveiw/blob/master/java%E5%9F%BA%E7%A1%80/overview.md)
