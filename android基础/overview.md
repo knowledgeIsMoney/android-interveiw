@@ -17,3 +17,5 @@
 9.[数据库](https://github.com/knowledgeIsMoney/android-interveiw/blob/master/android%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E5%BA%93.md)
 
 10.[保活](https://github.com/knowledgeIsMoney/android-interveiw/blob/master/android%E5%9F%BA%E7%A1%80/%E4%BF%9D%E6%B4%BB.md)
+
+11.[launcher启动app过程](https://github.com/knowledgeIsMoney/android-interveiw/blob/master/android%E5%9F%BA%E7%A1%80/launcher%E5%90%AF%E5%8A%A8app%E8%BF%87%E7%A8%8B.md)
