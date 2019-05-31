@@ -25,3 +25,5 @@
 13.[AMS](https://github.com/knowledgeIsMoney/android-interveiw/blob/master/android%E5%9F%BA%E7%A1%80/ActivityManagerService.md)
 
 14.[布局](https://github.com/knowledgeIsMoney/android-interveiw/blob/master/android%E5%9F%BA%E7%A1%80/%E5%B8%83%E5%B1%80.md)
+
+15.硬件加速软件加速的区别？硬件加速就是打开GPU渲染
