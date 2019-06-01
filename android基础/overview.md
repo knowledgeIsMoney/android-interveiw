@@ -27,3 +27,5 @@
 14.[布局](https://github.com/knowledgeIsMoney/android-interveiw/blob/master/android%E5%9F%BA%E7%A1%80/%E5%B8%83%E5%B1%80.md)
 
 15.硬件加速软件加速的区别？硬件加速就是打开GPU渲染
+
+16.[动画](https://github.com/knowledgeIsMoney/android-interveiw/blob/master/android%E5%9F%BA%E7%A1%80/%E5%8A%A8%E7%94%BB.md)
