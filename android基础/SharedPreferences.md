@@ -7,7 +7,8 @@
 ## 问题4：SharedPreferences如何实现进程安全？
 #### 参考文章： https://juejin.im/entry/590833711b69e60058eb34b9
 #### 参考答案：使用ContentProvider封装，
-
+## apply如何保证数据安全？
+#### 分使用场景、使用子线程commit、高频不要使用SP
 
 参考文章：https://blog.csdn.net/qq_16188829/article/details/78597427
 apply可能会导致主线程anr，使用要谨慎，最好是使用子线程commit
