@@ -16,4 +16,6 @@ bindservice：onCreate，onBind，onUnbind，onDestory
 ## service中该如何做耗时操作？
 #### 使用IntentService，在IntentService的onCreate中初始化了一个HandlerThread，在onHandleIntent方法中就是异步线程了
 ##### 其他异步方法
+## startService与bindService区别？
+
 ## 
