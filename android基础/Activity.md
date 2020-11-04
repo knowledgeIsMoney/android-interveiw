@@ -17,3 +17,8 @@
 ## 启动模式有哪几种？
     standard、singleTop、singleTask、singleInstance
     https://blog.csdn.net/mynameishuangshuai/article/details/51491074
+    
+## AActivity是singleTop的再启动AActivity会怎么走声明周期？
+    onPause
+    onNewIntent
+    onResume
