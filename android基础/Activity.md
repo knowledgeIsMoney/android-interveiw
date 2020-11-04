@@ -13,3 +13,7 @@
     AActivity: onResume
     BActivity: onStop
     BActivity: onDestroy
+
+## 启动模式有哪几种？
+    standard、singleTop、singleTask、singleInstance
+    https://blog.csdn.net/mynameishuangshuai/article/details/51491074
