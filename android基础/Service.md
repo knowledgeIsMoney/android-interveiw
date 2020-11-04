@@ -18,4 +18,4 @@ bindservice：onCreate，onBind，onUnbind，onDestory
 ##### 其他异步方法
 ## startService与bindService区别？
 
-## 
+## service如何保活
