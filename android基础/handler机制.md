@@ -20,3 +20,4 @@
 #### 参考答案：静态内部类加弱引用持有activity对象，另一种优雅的写法：将WeakReference封装在BaseHandler类中（http://www.ishenping.com/ArtInfo/177913.html）
 ## 问题8：handler如何去除所有消息
 #### Looper.myLooper().quit();
+## 延时msg是如何达到延时效果
