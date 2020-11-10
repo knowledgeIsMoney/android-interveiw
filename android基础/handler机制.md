@@ -21,3 +21,5 @@
 ## 问题8：handler如何去除所有消息
 #### Looper.myLooper().quit();
 ## 延时msg是如何达到延时效果
+
+## handler如何知道发到哪个消息队列的？
