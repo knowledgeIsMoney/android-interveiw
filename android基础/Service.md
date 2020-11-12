@@ -17,5 +17,9 @@ bindservice：onCreate，onBind，onUnbind，onDestory
 #### 使用IntentService，在IntentService的onCreate中初始化了一个HandlerThread，在onHandleIntent方法中就是异步线程了
 ##### 其他异步方法
 ## startService与bindService区别？
-
+#### startService启动service，不能交互，Service自己运行
+#### bindService 可以绑定service建立连接，可以通过Ibinder与service通讯
 ## service如何保活
+#### 矩阵拉起
+#### <intent-filter android:priority="1000">设置高优先级
+#### https://segmentfault.com/a/1190000018424447
