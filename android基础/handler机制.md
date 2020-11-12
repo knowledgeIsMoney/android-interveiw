@@ -21,5 +21,6 @@
 ## 问题8：handler如何去除所有消息
 #### Looper.myLooper().quit();
 ## 延时msg是如何达到延时效果
-
+#### 靠when字段确定处理事件，如果队列有数据则根据when排队，如果没消息则睡眠等待when时间到了唤醒    
 ## handler如何知道发到哪个消息队列的？
+#### handler持有MessageQueue对象是创建是Loop那里获得的
