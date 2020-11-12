@@ -9,3 +9,7 @@
 #### 参考答案：(https://github.com/knowledgeIsMoney/android-interveiw/blob/master/%E8%BF%9B%E9%98%B6%E9%A2%98/%E4%B8%A4%E4%B8%AAviewpager%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%B7%A6%E6%BB%91%E5%8F%B3%E6%BB%91%E5%AD%90%E7%88%B6view%E8%81%94%E5%8A%A8%EF%BC%8C%E8%A7%A3%E5%86%B3%E6%BB%91%E5%8A%A8%E5%86%B2%E7%AA%81.md)
 
 ## 滑动冲突解决的各种例子？
+#### https://juejin.im/post/6844903806308712456
+#### 外部拦截和内部拦截法，
+#### 外部拦截重写父布局onInterceptTouchEvent拦截move事件，
+#### 内部拦截重写父布局onInterceptTouchEvent-move事件默认拦截，再重写子布局dispatchTouchEvent，通过getParent().requestDisallowInterceptTouchEvent(true);和getParent().requestDisallowInterceptTouchEvent(false);控制是否让父布局处理。
