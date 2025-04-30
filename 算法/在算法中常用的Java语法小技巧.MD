@@ -1,15 +1,19 @@
-#位运算
+位运算
+-----------------
 |或，&与，^异或，<<右移，>>左移（补符号位，0补0,1补1），>>>无符号右移（永远补0），同或使用异或取反!(a^b)
 
-#String
+String
+-----------------
 new String(arr , 1 , arr.length-1);
 
-#Char
+Char
+-----------------
 Character.isLetterOrDigit    		char 判断是不是字母数字  
 Character.toLowerCase       	char 转小写  
 char[] arr = s.toCharArray();      String 转 char数组 map putifabsent   可以在没有的时候推默认值
 
-#Array
+Array
+-----------------
 Arrays.sort(nums);			数组排序 
 
 Queue
