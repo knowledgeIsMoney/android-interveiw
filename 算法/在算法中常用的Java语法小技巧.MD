@@ -14,7 +14,11 @@ char[] arr = s.toCharArray();      String 转 char数组 map putifabsent   可
 
 Array
 -----------------
-Arrays.sort(nums);			数组排序 
+Arrays.sort(nums);			数组排序
+
+int[][] dp = new int[n][m];
+Arrays.stream(dp).forEach(ar -> Arrays.fill(ar, -1));  数组填充
+Arrays.fill(array, value);  数组填充
 
 Queue
 -----------------
